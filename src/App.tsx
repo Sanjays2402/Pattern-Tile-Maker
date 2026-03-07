@@ -29,7 +29,6 @@ function App() {
   const rainbowHue = useRef(0);
   const lastPos = useRef<{ x: number, y: number } | null>(null);
   const animOffset = useRef(0);
-  const reqRef = useRef<number | undefined>(undefined);
 
   // Panning state (for dragging background)
   const panRef = useRef({ x: 0, y: 0 });
