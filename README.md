@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# 🎨 Pattern Tile Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=flat&logo=react&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=flat&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+An interactive **pattern tile drawing tool** — draw on a canvas tile and watch it repeat in real-time across multiple tiling modes. Perfect for creating seamless patterns, wallpapers, and textures.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- ✏️ **Drawing tools** — pen, eraser, spray can, paint bucket fill
+- 🪞 **Tiling modes** — normal repeat, mirror, brick offset, diagonal
+- 🎨 **Color & brush controls** — adjustable size, color picker, background color
+- 🌈 **Rainbow mode** — auto-cycling hue while drawing
+- ✨ **Neon mode** — glowing brush strokes
+- 🔄 **Symmetry mode** — draw mirrored across the center
+- ⭐ **Stamp shapes** — heart, star, sparkle, sun, cloud, moon, leaf, aperture
+- 📐 **Pattern scale** — zoom the tile repeat in/out
+- 🎬 **Animation** — auto-scrolling pattern with adjustable speed
+- ↩️ **Undo support** — step back through drawing history
+- 📥 **Export** — download your pattern as an image
+- 🖱️ **Pan & drag** — drag the background to reposition the tiled view
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Getting Started
 
-## Expanding the ESLint configuration
+```bash
+# Clone the repo
+git clone https://github.com/Sanjays2402/Pattern-Tile-Maker.git
+cd Pattern-Tile-Maker
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# Install dependencies
+npm install
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Start dev server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📦 Build
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run build
 ```
+
+## 🏗️ Project Structure
+
+```
+Pattern-Tile-Maker/
+├── src/
+│   ├── App.tsx       # Full app — canvas drawing, tiling engine, UI controls
+│   ├── main.tsx      # Entry point
+│   └── index.css     # Styles
+├── index.html
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
+
+## 👤 Author
+
+**Sanjay Santhanam**
